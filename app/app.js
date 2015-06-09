@@ -1,5 +1,15 @@
-var app = angular.module('directivePractice', []);
+var app = angular.module('directivePractice', ['ngRoute']);
 
-app.config(function(){
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/home', {
+		templateUrl: 'app/homeTmpl.html',
+		controller: 'homeCtrl',
+		resolve: {
 
+		}
+
+
+	})
+	.otherwise('/home')
 });
