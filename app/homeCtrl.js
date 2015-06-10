@@ -2,6 +2,7 @@ var app = angular.module('directivePractice')
 
 app.controller('homeCtrl', function($scope, homeService){
 
+
 	$scope.users = [
 	 {
 	   name: "Geoff McMammy",
@@ -35,6 +36,8 @@ app.controller('homeCtrl', function($scope, homeService){
 	 }
 	]
 
+	
+
 	$scope.getWeather = function(city){
 		return homeService.getWeather(city);
 	}
@@ -42,6 +45,6 @@ app.controller('homeCtrl', function($scope, homeService){
 	$scope.getUser = function(user){
 		$scope.currentUser = user;
 	}
-$scope.getUser($scope.users[0])
+//$scope.getUser($scope.users[0])
 
 })

@@ -4,12 +4,7 @@ app.config(function($routeProvider){
 	$routeProvider
 	.when('/home', {
 		templateUrl: 'app/homeTmpl.html',
-		controller: 'homeCtrl',
-		resolve: {
-
-		}
-
-
+		controller: 'homeCtrl'
 	})
 	.otherwise('/home')
 });
